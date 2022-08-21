@@ -204,8 +204,6 @@ local function XKJLBD_fake_script() -- Assets.LocalScript
 	script.Parent.Parent:Destroy()
 end
 coroutine.wrap(XKJLBD_fake_script)()
-
-
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until shared.GuiLibrary
 local GuiLibrary = shared.GuiLibrary
