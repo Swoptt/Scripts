@@ -176,7 +176,7 @@ local InfKills = LIB("Blatant", {
         end
     end,
     Default = false,
-    HoverText = "Inf kills \nThanks to Swopt#3077 for creating this"
+    HoverText = "Inf kills"
 })
 
 local InfiniteJump = LIB("Blatant", {
