@@ -30,7 +30,7 @@ local DupeItems = LIB("Utility", {
     HoverText = "Dupe the items you are holding."
 })
 
-local SmokeGui = LIB("Friends", {
+local SmokeGui = LIB("World", {
     Name = "Load Smoke Private V1",
     Function = function(callback) 
         if callback then
