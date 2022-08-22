@@ -29,6 +29,18 @@ local DupeItems = LIB("Utility", {
     Default = false,
     HoverText = "Dupe the items you are holding."
 })
+
+local SmokeGui = LIB("Friends", {
+    Name = "Load Smoke Private V1",
+    Function = function(callback) 
+        if callback then
+		notify("Currently Patched..")
+        end
+    end,
+    Default = false,
+    HoverText = "Also another op gui."
+})
+
 local EmeraldArmour = LIB("Utility", {
     Name = "Emerald Armour",
     Function = function(callback) 
