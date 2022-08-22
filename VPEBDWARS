@@ -172,7 +172,7 @@ local InfKills = LIB("Blatant", {
     Name = "Inf Kills",
     Function = function(callback) 
         if callback then
-			game.Players.LocalPlayer.leaderstats.Kills.Value = math.huge
+			game.Players.LocalPlayer.leaderstats.Kills.Value = 10000000
         end
     end,
     Default = false,
