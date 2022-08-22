@@ -16,14 +16,3 @@ function boxnotify(text)
         messagebox(text, "Notification", 0)
      end
 end
-
-local Name = LIB("Utility", {
-    Name = "Name",
-    Function = function(callback) 
-        if callback then
-		print("script")
-        end
-    end,
-    Default = false,
-    HoverText = "hover text"
-})
