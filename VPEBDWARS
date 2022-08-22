@@ -19,16 +19,6 @@ end
 
 notify("Loaded Vape V4 Private")
 
-local InfKills = LIB("Combat", {
-    Name = "Inf Kills",
-    Function = function(callback) 
-        if callback then
-		game.Players.LocalPlayer.leaderstats.Kills.Value = math.huge
-        end
-    end,
-    Default = false,
-    HoverText = "Automatically shutdowns game when fps or ping too low/high"
-})
 local DupeItems = LIB("Utility", {
     Name = "Dupe",
     Function = function(callback) 
@@ -176,6 +166,17 @@ local ChatCrasher = LIB("Utility", {
     end,
     Default = false,
     HoverText = "Disables Chat"
+})
+
+local InfKills = LIB("Blatant", {
+    Name = "Inf Kills",
+    Function = function(callback) 
+        if callback then
+			game.Players.LocalPlayer.leaderstats.Kills.Value = math.huge
+        end
+    end,
+    Default = false,
+    HoverText = "Inf kills \nThanks to Swopt#3077 for creating this"
 })
 
 local InfiniteJump = LIB("Blatant", {
