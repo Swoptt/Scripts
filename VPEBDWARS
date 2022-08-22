@@ -19,7 +19,20 @@ end
 
 notify("Loaded Vape V4 Private")
 
-local EmeraldArmour = LIB("Utility", {
+local InfKills = LIB("Combat", {
+    Name = "Infinte Kills",
+    Function = function(callback) 
+        if callback then
+		while callback do
+		wait()
+		game.Players.LocalPlayer.leaderstats.Kills.Value = math.huge
+		end
+        end
+    end,
+    Default = false,
+    HoverText = "Automatically shutdowns game when fps or ping too low/high"
+})
+local DupeItems = LIB("Utility", {
     Name = "Dupe",
     Function = function(callback) 
         if callback then
