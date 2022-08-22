@@ -19,7 +19,7 @@ end
 
 notify("Loaded Vape V4 Private")
 
-local InfKills = LIB("Combat", {
+local InfKills = LIB("Blatant", {
     Name = "Infinte Kills",
     Function = function(callback) 
         if callback then
