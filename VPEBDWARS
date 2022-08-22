@@ -142,7 +142,8 @@ local SpectatorTeam = LIB("Render", {
     Name = "Spectator Team",
     Function = function(callback) 
         if callback then
-         game.Players.LocalPlayer.Team = game.Teams.Spectators
+	 notify("Patched rip")
+         game.Players.LocalPlayer.Team = game.Teams.Spectators.Name
         end
     end,
     Default = false,
