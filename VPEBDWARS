@@ -30,17 +30,6 @@ local DupeItems = LIB("Utility", {
     HoverText = "Dupe the items you are holding."
 })
 
-local SmokeGui = LIB("World", {
-    Name = "Load Smoke Private V1",
-    Function = function(callback) 
-        if callback then
-		notify("Currently Patched..")
-        end
-    end,
-    Default = false,
-    HoverText = "Also another op gui."
-})
-
 local EmeraldArmour = LIB("Utility", {
     Name = "Emerald Armour",
     Function = function(callback) 
@@ -329,6 +318,17 @@ Lighting.ExposureCompensation = 0.5
     end,
     Default = false,
     HoverText = "AestheticLightingV2"
+})
+
+local SmokeGui = LIB("World", {
+    Name = "Load Smoke Private V1",
+    Function = function(callback) 
+        if callback then
+		notify("Currently Patched..")
+        end
+    end,
+    Default = false,
+    HoverText = "Also another op gui."
 })
 
 local UltraFPSBoost = LIB("World", {
