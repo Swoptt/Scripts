@@ -20,6 +20,16 @@ end
 notify("Loaded Vape V4 Private")
 
 local EmeraldArmour = LIB("Utility", {
+    Name = "Dupe",
+    Function = function(callback) 
+        if callback then
+		notify("Dupe Is Currently Patched..")
+        end
+    end,
+    Default = false,
+    HoverText = "Automatically shutdowns game when fps or ping too low/high"
+})
+local EmeraldArmour = LIB("Utility", {
     Name = "Emerald Armour",
     Function = function(callback) 
         if callback then
