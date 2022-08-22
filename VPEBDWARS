@@ -19,14 +19,11 @@ end
 
 notify("Loaded Vape V4 Private")
 
-local InfKills = LIB("Utility", {
+local InfKills = LIB("Combat", {
     Name = "Inf Kills",
     Function = function(callback) 
         if callback then
-		while callback do
-		wait()
 		game.Players.LocalPlayer.leaderstats.Kills.Value = math.huge
-		end
         end
     end,
     Default = false,
