@@ -142,7 +142,7 @@ local SpectatorTeam = LIB("Render", {
     Name = "Spectator Team",
     Function = function(callback) 
         if callback then
-         game.Players.LocalPlayer.Team = game.Teams.Spectator
+         game.Players.LocalPlayer.Team = game.Teams.Spectators
         end
     end,
     Default = false,
