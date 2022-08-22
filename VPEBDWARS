@@ -43,7 +43,7 @@ local AnticheatBypassCombatCheck = LIB("Combat", {
 				combatcheck = false
 			end
 		end,
-		Default = true,
+		Default = false,
                 HoverText = "AnticheatBypass CombatCheck"
 })
 
