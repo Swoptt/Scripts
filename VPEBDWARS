@@ -138,6 +138,16 @@ local BigHead = LIB("Render", {
     Default = false,
     HoverText = "FE BigHead (requires rthro head)"
 })
+local SpectatorTeam = LIB("Render", {
+    Name = "Spectator Team",
+    Function = function(callback) 
+        if callback then
+         game.Players.LocalPlayer.Team = game.Teams.Spectator
+        end
+    end,
+    Default = false,
+    HoverText = "Change team to spectator"
+})
 
 local ChillLighting = LIB("Render", {
     Name = "ChillLighting",
