@@ -77,8 +77,6 @@ local EmeraldArmour = LIB("Utility", {
 		local PlayerName = game.Players.LocalPlayer.Name
 local ReplicatedStorage = game.ReplicatedStorage
 
-ReplicatedStorage.Inventories[PlayerName]:Destroy()
-
 ReplicatedStorage.Assets.Armor.emerald_boots:Clone().Parent = ReplicatedStorage.Inventories[PlayerName]
 ReplicatedStorage.Assets.Armor.emerald_chestplate:Clone().Parent = ReplicatedStorage.Inventories[PlayerName]
 ReplicatedStorage.Assets.Armor.emerald_helmet:Clone().Parent = ReplicatedStorage.Inventories[PlayerName]
