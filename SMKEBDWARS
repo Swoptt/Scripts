@@ -28,7 +28,7 @@ local BetterReach = LIB("Combat", {
         end
     end,
     Default = false,
-    HoverText = "Dupe the items you are holding."
+    HoverText = "Max Reach Distance: 50"
 })
 
 local AnticheatBypassCombatCheck = LIB("Combat", {
