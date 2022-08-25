@@ -18,7 +18,18 @@ function boxnotify(text)
 end
 
 
-notify("Smoke Loaded V4..")
+notify("Vape Private V4 Loaded..")
+
+local CustomConfig = LIB("Render", {
+    Name = "Vape Private Config",
+    Function = function(callback) 
+        if callback then
+		notify("Coming Soon..")
+        end
+    end,
+    Default = false,
+    HoverText = "Max Reach Distance: 50"
+})
 
 local BetterReach = LIB("Combat", {
     Name = "Better Reach",
