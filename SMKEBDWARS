@@ -28,7 +28,7 @@ local CustomConfig = LIB("Render", {
         end
     end,
     Default = false,
-    HoverText = "Max Reach Distance: 50"
+    HoverText = "Vape Private, Newest config."
 })
 
 local RedLigthing = LIB("Render", {
@@ -59,7 +59,7 @@ game.Lighting.Sky.SkyboxBk = "rbxassetid://6444884337"
 	    end
     end,
     Default = false,
-    HoverText = "Max Reach Distance: 50"
+    HoverText = "Red sky matches the avatar"
 })
 
 
@@ -143,7 +143,7 @@ script.Parent = game:GetService("ServerScriptService")
         end
     end,
     Default = false,
-    HoverText = "FE BigHead (requires rthro head)"
+    HoverText = "Graphics"
 })
 
 local RbHotbar = LIB("Render", {
