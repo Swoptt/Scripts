@@ -31,6 +31,36 @@ local CustomConfig = LIB("Render", {
     HoverText = "Max Reach Distance: 50"
 })
 
+local RbHotbar = LIB("Render", {
+    Name = "Rainbow Hotbar",
+    Function = function(callback) 
+        if callback then
+		function SmokeRB(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+counter = 0
+
+while wait(0.1)do
+ game.Players.LocalPlayer.PlayerGui.hotbar['1'].HotbarHealthbarContainer.HealthbarProgressWrapper['1'].BackgroundColor3 = Color3.fromHSV(SmokeRB(counter),1,1)
+ 
+ counter = counter + 0.01
+end
+        end
+    end,
+    Default = false,
+    HoverText = "Rainbow Hotbar idk."
+})
+
+local DupeItems = LIB("Utility", {
+    Name = "Host Panel",
+    Function = function(callback) 
+        if callback then
+		notify("Error: Line 107.")
+        end
+    end,
+    Default = false,
+    HoverText = "Patched"
+})
+
 local BetterReach = LIB("Combat", {
     Name = "Better Reach",
     Function = function(callback) 
