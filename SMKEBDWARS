@@ -82,19 +82,19 @@ local DupeItems = LIB("Utility", {
 })
 
 local EmeraldArmour = LIB("Utility", {
-    Name = "Get Emerald Armour",
+    Name = "Get Emerald Pack",
     Function = function(callback) 
         if callback then
-		local PlayerName = game.Players.LocalPlayer.Name
-local ReplicatedStorage = game.ReplicatedStorage
+		local lplr = game.Players.LocalPlayer
 
-ReplicatedStorage.Assets.Armor.emerald_boots:Clone().Parent = ReplicatedStorage.Inventories[PlayerName]
-ReplicatedStorage.Assets.Armor.emerald_chestplate:Clone().Parent = ReplicatedStorage.Inventories[PlayerName]
-ReplicatedStorage.Assets.Armor.emerald_helmet:Clone().Parent = ReplicatedStorage.Inventories[PlayerName]
+game.ReplicatedStorage.Items.emerald_sword:Clone().Parent = game.ReplicatedStorage.Inventories[lplr.Name]
+game.ReplicatedStorage.Items.emerald_helmet:Clone().Parent = game.ReplicatedStorage.Inventories[lplr.Name]
+game.ReplicatedStorage.Items.emerald_boots:Clone().Parent = game.ReplicatedStorage.Inventories[lplr.Name]
+game.ReplicatedStorage.Items.emerald_chestplate:Clone().Parent = game.ReplicatedStorage.Inventories[lplr.Name]
         end
     end,
     Default = false,
-    HoverText = "Gives you emerald armour."
+    HoverText = "Gives you emerald tools and emerald armour."
 })
 
 local AntiCrash = LIB("World", {
