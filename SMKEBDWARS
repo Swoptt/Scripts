@@ -31,6 +31,38 @@ local CustomConfig = LIB("Render", {
     HoverText = "Max Reach Distance: 50"
 })
 
+local RedLigthing = LIB("Render", {
+    Name = "Red Sky",
+    Function = function(callback) 
+        if callback then
+game.Lighting.Sky.SkyboxBk = "rbxassetid://6444884337"
+            game.Lighting.Sky.SkyboxDn = "rbxassetid://6444884785"
+            game.Lighting.Sky.SkyboxFt = "rbxassetid://6444884337"
+            game.Lighting.Sky.SkyboxLf = "rbxassetid://6444884337"
+            game.Lighting.Sky.SkyboxRt = "rbxassetid://6444884337"
+            game.Lighting.Sky.SkyboxUp = "rbxassetid://6412503613"
+            game.Lighting.FogColor = Color3.new(236, 88, 241)
+            game.Lighting.FogEnd = "200"
+            game.Lighting.FogStart = "0"
+            game.Lighting.Ambient = Color3.new(0.5, 0, 1)
+        else
+            game.Lighting.Sky.SkyboxBk = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxDn = "http://www.roblox.com/asset/?id=6334928194"
+            game.Lighting.Sky.SkyboxFt = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxLf = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxRt = "http://www.roblox.com/asset/?id=7018684000"
+            game.Lighting.Sky.SkyboxUp = "http://www.roblox.com/asset/?id=7018689553"
+            game.Lighting.FogColor = Color3.new(1, 1, 1)
+            game.Lighting.FogEnd = "10000"
+            game.Lighting.FogStart = "0"
+            game.Lighting.Ambient = Color3.new(0, 0, 0)
+	    end
+    end,
+    Default = false,
+    HoverText = "Max Reach Distance: 50"
+})
+
+
 local AmazingLigthing = LIB("Render", {
     Name = "AmazingLigthing",
     Function = function(callback) 
