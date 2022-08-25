@@ -41,10 +41,10 @@ game.Lighting.Sky.SkyboxBk = "rbxassetid://6444884337"
             game.Lighting.Sky.SkyboxLf = "rbxassetid://6444884337"
             game.Lighting.Sky.SkyboxRt = "rbxassetid://6444884337"
             game.Lighting.Sky.SkyboxUp = "rbxassetid://6412503613"
-            game.Lighting.FogColor = Color3.new(236, 88, 241)
+            game.Lighting.FogColor = Color3.new(68, 1, 19)
             game.Lighting.FogEnd = "200"
             game.Lighting.FogStart = "0"
-            game.Lighting.Ambient = Color3.new(0.5, 0, 1)
+            game.Lighting.Ambient = Color3.new(85, 0, 0)
         else
             game.Lighting.Sky.SkyboxBk = "http://www.roblox.com/asset/?id=7018684000"
             game.Lighting.Sky.SkyboxDn = "http://www.roblox.com/asset/?id=6334928194"
